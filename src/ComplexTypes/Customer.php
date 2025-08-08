@@ -54,7 +54,7 @@ class Customer extends BaseType
         $ContactPerson = null,
         $Email = null,
         $Name = null,
-        Address $Address = null
+        ?Address $Address = null
     ) {
         $this->setCustomerNumber($CustomerNumber);
         $this->setCustomerCode($CustomerCode);

@@ -190,31 +190,32 @@ class Shipment extends BaseType
      * @param string $ReturnReference Optional.
        @param string $DeliveryTimeStampStart Optional.
      * @param string $DeliveryTimeStampEnd Optional.
+       change for PHP 8.4
      */
     public function __construct(
         ArrayOfAddress $Addresses,
         $Barcode,
         Dimension $Dimension,
         $ProductCodeDelivery,
-        ArrayOfAmount $Amounts = null,
+        ?ArrayOfAmount $Amounts = null,
         $CollectionTimeStampEnd = null,
         $CollectionTimeStampStart = null,
-        ArrayOfContact $Contacts = null,
+        ?ArrayOfContact $Contacts = null,
         $Content = null,
         $CostCenter = null,
         $CustomerOrderNumber = null,
-        Customs $Customs = null,
+        ?Customs $Customs = null,
         $DeliveryAddress = null,
         $DeliveryDate = null,
         $DownPartnerBarcode = null,
         $DownPartnerID = null,
         $DownPartnerLocation = null,
-        ArrayOfGroup $Groups = null,
+        ?ArrayOfGroup $Groups = null,
         $IDExpiration = null,
         $IDNumber = null,
         $IDType = null,
         $ProductCodeCollect = null,
-        ArrayOfProductOption $ProductOptions = null,
+        ?ArrayOfProductOption $ProductOptions = null,
         $ReceiverDateOfBirth = null,
         $Reference = null,
         $ReferenceCollect = null,

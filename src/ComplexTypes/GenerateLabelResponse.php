@@ -18,8 +18,8 @@ class GenerateLabelResponse extends BaseType
      * @param ArrayOfResponseShipment|null $ResponseShipments
      */
     public function __construct(
-        ArrayOfMergedLabel $MergedLabels = null,
-        ArrayOfResponseShipment $ResponseShipments = null
+        ?ArrayOfMergedLabel $MergedLabels = null,
+        ?ArrayOfResponseShipment $ResponseShipments = null
     ) {
         $this->setMergedLabels($MergedLabels);
         $this->setResponseShipments($ResponseShipments);
